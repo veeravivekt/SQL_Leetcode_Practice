@@ -69,7 +69,7 @@ WHERE "debut" >= '2000-01-01';
 SELECT "first_name", "last_name"
 FROM "players"
 WHERE "final_game" BETWEEN '2022-01-01' AND '2022-12-31'
-ORDER BY "first_name", "last_name";
+ORDER BY "first_name", "last_name"; 
 
 -- In 10.sql, write SQL query to answer a question of your choice. This query should:
 -- Make use of AS to rename a column
