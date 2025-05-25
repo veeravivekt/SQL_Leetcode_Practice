@@ -16,7 +16,7 @@ ORDER BY "year" DESC;
 -- Sort by year in descending order.
 -- Your query should return a table with two columns, one for year and one for salary.
 SELECT "year", "salary"
-FROM "salaries"
+FROM "salaries"  
 WHERE "player_id" = (
     SELECT "id" FROM "players" 
     WHERE "first_name" = 'Cal' AND "last_name" = 'Ripken'
@@ -175,7 +175,6 @@ FROM (
         WHERE s."year" = 2001 AND s."year" = per."year" AND per."RBI" IS NOT 0
         ORDER BY s."salary"/per."RBI"
         LIMIT 10)
-    )
-ORDER BY "id";
-
+    ) 
+ORDER BY "id";`
  
